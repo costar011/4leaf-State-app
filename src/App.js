@@ -4,6 +4,7 @@ import Navigation from "./Layouts/Navigation";
 import Kakao from "./Screens/kakao";
 import Friends from "./Screens/Friends";
 import Love from "./Screens/Love";
+import Footer from "./Layouts/Footer";
 import { Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -27,6 +28,8 @@ class App extends React.Component {
         <h1>{this.state.changeValue}</h1>
         <Button name={`INCRMENT`} action={this._increment} />
         <Button name={`DECRMENT`} action={this._decrement} />
+
+        <Route path="/" component={Footer} />
       </div>
     );
   }
